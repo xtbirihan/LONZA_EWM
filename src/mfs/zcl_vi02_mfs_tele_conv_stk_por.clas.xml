@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_VI02_MFS_TELE_CONV_STK_POR</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Lonzaspecific Impementation</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_STACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Dummy HU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_WT_TO_OUTFEED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send the dummy HU to reject bin</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_METH_CREATE_STACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>3</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_METH_CREATE_WT_TO_OUTFEED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Full Component Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_METH_PROCESS_POR0</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process POR(0) Telegram</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_METH_PROCESS_POR1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process POR(1) Telegram</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_PROCESSOR_CLPREFIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type Name</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_STACK</CMPNAME>
+     <SCONAME>/SCWM/CX_MFS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>MFS General Error Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_STACK</CMPNAME>
+     <SCONAME>ES_HUHDR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Structure for Processing HU Headers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_STACK</CMPNAME>
+     <SCONAME>EV_EXCCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_WT_TO_OUTFEED</CMPNAME>
+     <SCONAME>/SCWM/CX_MFS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>MFS General Error Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_WT_TO_OUTFEED</CMPNAME>
+     <SCONAME>/SL0/CX_GENERAL_EXCEPTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error handling class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_WT_TO_OUTFEED</CMPNAME>
+     <SCONAME>IS_HUHDR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Structure for Processing HU Headers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_WT_TO_OUTFEED</CMPNAME>
+     <SCONAME>IV_CP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Communication Point for Conveyor Technique</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_WT_TO_OUTFEED</CMPNAME>
+     <SCONAME>RV_TANUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Task</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

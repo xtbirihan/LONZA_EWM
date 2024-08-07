@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_VI02_RF_PUTAWAY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>BioLOG: RF Putaway</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_RF_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RF Function Codes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_RF_LTRANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RF Logical Transactions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_RF_PNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RF Parameter Names</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_RF_SHORTCUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RF Shortcuts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_RF_SNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RF Structure Names</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_RF_STEPS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RF Steps</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_RSRC_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get resouce data assigned to the user</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GO_SINGLETON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM RF Putaway class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Init data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_MSG_BUF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MX_EXC_BUF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM-RF: Exception Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PTHUDS_PBO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>PBO for RF Step PTHUDS (HU destination data)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RSRC_DATA</CMPNAME>
+     <SCONAME>RS_RSRC</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Resources</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Floor Area Picking</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZ_VI02_FLOOR_AREA_PICKINGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ_VI02_FLOOR_AREA_PICKING</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_CREATE_PICKHU</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Read Pick Hu</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_PICKHUDATA</PARAMETER>
+       <TYP>ZZS_VI02_FAP_PICK_HU</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_PICKHU_KEYS</PARAMETER>
+       <TYP>ZZS_VI02_FAP_READ_PICK_HU</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_PICKHUDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pick Handling Unit</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_PICKHU_KEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Read Pick Hu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_HUIDENTIFIERS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Mapping of Exception Codes to screen Buttons and Values for HU Identifiers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_MAPPING</PARAMETER>
+       <TYP>ZVI02_T_EXC_MAPPING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_MAPPING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mapping of Exception Codes to screen Buttons and Values</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_HUIDENTIFIER_SINGLE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Mapping of Exception Codes to screen Buttons and Values for HU Identifiers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_FKEY</PARAMETER>
+       <TYP>Z_DE_FKEY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_MAPPING</PARAMETER>
+       <TYP>ZZS_VI02_EXC_MAPPING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_FKEY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Function Key Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_MAPPING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mapping of Exception Codes to screen Buttons and Values</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_MATERIAL_CONVERT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Quantity Convert for Material</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MATID</PARAMETER>
+       <TYP>/SCWM/DE_MATID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_QUAN</PARAMETER>
+       <TYP>/SCWM/DE_QUANTITY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UNIT_FROM</PARAMETER>
+       <TYP>/SCWM/DE_UNIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UNIT_TO</PARAMETER>
+       <TYP>/SCWM/DE_UNIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_BATCHID</PARAMETER>
+       <TYP>/SCWM/DE_BATCHID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_QUAN</PARAMETER>
+       <TYP>/SCWM/DE_QUANTITY</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MATID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_QUAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Quantity Field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UNIT_FROM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Unit of Measure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UNIT_TO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Unit of Measure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_BATCHID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Batch</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_QUAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Quantity Field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Material Data</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_OUTBDELV_HEADER</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Outbound Delivery Header Set</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DOCID</PARAMETER>
+       <TYP>/SCDL/DL_DOCID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_OUTBDELV_HEADER</PARAMETER>
+       <TYP>ZZS_VI02_FAP_OUTBDELV_HEADER</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_OUTBDELV_ITEMS</PARAMETER>
+       <DBSTRUCT>ZZS_VI02_FAP_OUTBDELV_ITEM</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BAPIRET2_T</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DOCID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_OUTBDELV_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Outbound Delivery Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_OUTBDELV_ITEMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_OUTBDELV_ITEM</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Outbound Delivery Item</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DOCID</PARAMETER>
+       <TYP>/SCDL/DL_DOCID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ITEMID</PARAMETER>
+       <TYP>/SCDL/DL_ITEMID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_OUTBDELV_ITEM</PARAMETER>
+       <TYP>ZZS_VI02_FAP_OUTBDELV_ITEM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DOCID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ITEMID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_OUTBDELV_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Outbound Delivery Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_READHU</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Read Hu</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_HUKEYS</PARAMETER>
+       <TYP>ZZS_VI02_SCANHU_KEYS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <TYP>ZZS_VI02_FAP_HUHEADER</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_HUKEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Material Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Material Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_READ_PICKHU</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Read Pick Hu</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_PICKHU_KEYS</PARAMETER>
+       <TYP>ZZS_VI02_FAP_READ_PICK_HU</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_PICKHUDATA</PARAMETER>
+       <TYP>ZZS_VI02_FAP_PICK_HU</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_PICKHU_KEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Read Pick Hu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_PICKHUDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pick Handling Unit</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_SCAN_DESTHU_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Read Pick Hu</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_PICKHUDATA</PARAMETER>
+       <TYP>ZZS_VI02_FAP_PICK_HU</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_PICKHU_KEYS</PARAMETER>
+       <TYP>ZZS_VI02_FAP_READ_PICK_HU</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_PICKHUDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pick Handling Unit</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_PICKHU_KEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Read Pick Hu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_FAP_SCAN_DESTHU_READ</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Read Pick Hu</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_PICKHU_KEYS</PARAMETER>
+       <TYP>ZZS_VI02_FAP_READ_PICK_HU</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_PICKHUDATA</PARAMETER>
+       <TYP>ZZS_VI02_FAP_PICK_HU</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_PICKHU_KEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Read Pick Hu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_PICKHUDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pick Handling Unit</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

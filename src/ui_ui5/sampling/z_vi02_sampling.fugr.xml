@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Sampling UI5</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_VI02_SAMPLING</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_VI02_GET_USER_DEFAULT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Get Default Warehouse For User</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_S_T300T</PARAMETER>
+       <TYP>/SCWM/S_T300T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ES_S_T300T</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number Descriptions</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_GM_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Post Quantity To Cost Center</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_UOM_QUAN</PARAMETER>
+       <TYP>ZZS_VI02_UOM_QUANTITY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_UOM_QUAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sampling Unit Of Measure Quantity</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_GM_CREATE_READ</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Post Quantity To Cost Center</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_UOM_QUAN</PARAMETER>
+       <TYP>ZZS_VI02_UOM_QUANTITY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <TYP>ZZS_VI02_HU_HEADER</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_UOM_QUAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sampling Unit Of Measure Quantity</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_HU_HEADER_READ</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Read HU Header</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <TYP>/SCWM/DE_WORKSTATION</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <TYP>/SCWM/DE_HUIDENT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <TYP>ZZS_VI02_HU_HEADER</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Unit Identification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Internal Structure for Processing HU Headers</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_HU_ITEMS_QUANTITY_READ</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Read HU Items</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <TYP>/SCWM/DE_WORKSTATION</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <TYP>/SCWM/DE_HUIDENT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_HUITEMS_QUANTITY</PARAMETER>
+       <TYP>ZVI02_T_HU_ITEM_QUANTITY</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Unit Identification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_HUITEMS_QUANTITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Items in the HU</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_HU_ITEMS_READ</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Read HU Items</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <TYP>/SCWM/DE_WORKSTATION</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <TYP>/SCWM/DE_HUIDENT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_HUITEMS</PARAMETER>
+       <TYP>ZVI02_T_HU_ITEM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Unit Identification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_HUITEMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Items in the HU</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_HU_READ_ALL_DETAILS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Read HU Header</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <TYP>/SCWM/DE_WORKSTATION</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <TYP>/SCWM/DE_HUIDENT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <TYP>ZZS_VI02_HU_HEADER</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_HUITEMS</PARAMETER>
+       <TYP>ZVI02_T_HU_ITEM</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_HUITEMS_QUANTITY</PARAMETER>
+       <TYP>ZVI02_T_HU_ITEM_QUANTITY</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Unit Identification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_HUHEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Internal Structure for Processing HU Headers</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_HUITEMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_HUITEMS_QUANTITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU Item Quantity</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_HU_WHSE_TASK_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>HU Warehouse Task Create</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_HU_WHSE_TASK</PARAMETER>
+       <TYP>ZZS_VI02_HU_WT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_KEYS</PARAMETER>
+       <TYP>ZZS_VI02_HU_WT_KEYS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_HU_WHSE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU Warehouse Task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_KEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU WT Keys</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_HU_WHSE_TASK_READ</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>HU Warehouse Task Read</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_KEYS</PARAMETER>
+       <TYP>ZZS_VI02_HU_WT_KEYS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_HU_WHSE_TASK</PARAMETER>
+       <TYP>ZZS_VI02_HU_WT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_KEYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Material Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_HU_WHSE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU Warehouse Task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_LOGIN_INFO</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Sampling Login Information</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <TYP>/SCWM/DE_WORKSTATION</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_WHN_WORKSTATION_PROFILE</PARAMETER>
+       <TYP>ZZS_VI02_WAREHOUSE_WORKSTATION</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WORKSTATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_WHN_WORKSTATION_PROFILE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Center Profile</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_NO_PUTBACK_LEFT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>No Putback Left</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_SH_WORK_CENTER</FUNCNAME>
+     <SHORT_TEXT>Search Help Exit: Generic FM Exit for PS Search Helps</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>SHLP</PARAMETER>
+       <TYP>SHLP_DESCR</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CALLCONTROL</PARAMETER>
+       <DBFIELD>DDSHF4CTRL</DBFIELD>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>SHLP_TAB</PARAMETER>
+       <TYP>SHLP_DESCT</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RECORD_TAB</PARAMETER>
+       <DBSTRUCT>SEAHLPRES</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>SHLP_TAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RECORD_TAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SHLP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALLCONTROL</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_VI02_VH_PRODUCT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Product Value Help</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_PRODUCT</PARAMETER>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_PRODUCT_UOM</PARAMETER>
+       <TYP>ZVI02_T_VH_PRODUCT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_PRODUCT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PRODUCT_UOM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

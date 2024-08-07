@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>EWM BioLOG in CH-Visp - Early Del. Conf.</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_VI02_OUTBOUND_DELIV</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZEWM_DLV_CONFIRM</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Early Delivery Confirmation FM</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_ORDIM_C</PARAMETER>
+       <TYP>/SCWM/TT_ORDIM_C</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_ORDIM_C</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table: Warehouse Tasks Confirmed</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

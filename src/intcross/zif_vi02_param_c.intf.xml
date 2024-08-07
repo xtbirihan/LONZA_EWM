@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_VI02_PARAM_C</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Constansts for Parameter Framework</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>C_CONTEXT_INB_DUMMY_TRANSPORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Context for Parameter (Program, BADI, ..)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_CONTEXT_PTS_FILT_SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Context for Parameter (Program, BADI, ..)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEF_LGPLA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEF_PMAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEST_1OG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEST_2OG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEST_EG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEST_MC1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_DEST_MZ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_HUTYPGRP_ZEPO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_HUTYP_SAMPLING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_INPUT_LGPLA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_LGTYP_CHK_BATCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_LGTYP_CHK_COMPAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_PMAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_PROCTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PARAM_PROCTY_FETCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PROF_MFS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Framework Profile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PROF_PUTAWAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Framework Profile</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

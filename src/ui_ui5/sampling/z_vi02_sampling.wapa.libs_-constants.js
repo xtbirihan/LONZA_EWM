@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";const a={url:"/sap/opu/odata/sap/Z_VI02_SAMPLING_SRV",login:"/sap/opu/odata/sap/Z_VI02_UI5_LOGIN_SRV"};return{service:a}});                                                                                           

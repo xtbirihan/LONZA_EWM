@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHI5" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SHI5>
+    <HEADER>
+     <EXTENSION>Z_VI02_CUST_ENH</EXTENSION>
+    </HEADER>
+    <TEXTS>
+     <TTREE_EXTT>
+      <SPRAS>E</SPRAS>
+      <EXTENSION>Z_VI02_CUST_ENH</EXTENSION>
+      <TEXT>EWM BioLOG in CH-Visp Cust. Enhancement ID</TEXT>
+     </TTREE_EXTT>
+    </TEXTS>
+    <SEQUENCES>
+     <TTREES>
+      <ID>87424C409991D763E10000000A155253</ID>
+      <EXTENSION>Z_VI02_CUST_ENH</EXTENSION>
+      <SEQUENCE>1</SEQUENCE>
+     </TTREES>
+    </SEQUENCES>
+   </SHI5>
+  </asx:values>
+ </asx:abap>
+</abapGit>

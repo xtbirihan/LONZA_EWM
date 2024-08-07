@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG Update material field</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_FG_UPDATE_MATERIAL_FIELD</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_FM_MATERIAL_FIELD</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>FM Update Material Field</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_WMARA</PARAMETER>
+       <TYP>MARA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_WMARC</PARAMETER>
+       <TYP>MARC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_WMARA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Material Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_WMARC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant Data for Material</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_FM_UPDATE_MATERIAL_FIELD</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>FM Update Material Field</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>WMARA</PARAMETER>
+       <TYP>MARA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WMARC</PARAMETER>
+       <TYP>MARC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>WMARA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Material Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WMARC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant Data for Material</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

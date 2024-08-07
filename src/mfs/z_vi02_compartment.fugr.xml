@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Bin compartment</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_VI02_COMPARTMENT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_VI02_COMP_BIN_STAT_REG_CLEAR</FUNCNAME>
+     <SHORT_TEXT>register the deletion of own BIn status Buffer</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

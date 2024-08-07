@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZS_VI02_T_CRANE_DIR_APPEND</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>/SL0/T_CRANE_DIR</SQLTAB>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>BioLOG: Append structure for /SL0/T_CRANE_DIR</DDTEXT>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZZS_VI02_T_CRANE_DIR_INCLUDE</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>BioLOG: Include structure for /SL0/T_CRANE_DIR</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

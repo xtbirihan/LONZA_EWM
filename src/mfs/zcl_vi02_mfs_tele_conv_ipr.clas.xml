@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_VI02_MFS_TELE_CONV_IPR</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IPR telegram processing</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>/SL0/MFS</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>write event log and reject reason</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IS_TELEGRAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Mapping Structure for Standard Action</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IT_BAPIRET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of BAPI return information</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IV_DUMMY_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handling Unit Identification</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IV_EVENT_TYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IV_MESSAGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event from return code in message</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IV_PROCESSED_KZ</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_EVTLOG_AND_REJREASON</CMPNAME>
+     <SCONAME>IV_REJECT_REASON</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error in Telegram</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

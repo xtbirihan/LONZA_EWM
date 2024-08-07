@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZQEVA_SUBSRC_1101_17</IMP_NAME>
+     <TEXT>1953900 - Subset inspection decision from external inspectio</TEXT>
+     <IMP_CLASS>ZCL_IM_QEVA_SUBSRC_1101_17</IMP_CLASS>
+     <EXIT_NAME>QEVA_SUBSCREEN_1101</EXIT_NAME>
+     <INTER_NAME>IF_EX_QEVA_SUBSCREEN_1101</INTER_NAME>
+     <ACTIVE>X</ACTIVE>
+    </IMPLEMENTATION_DATA>
+    <SCREENS>
+     <item>
+      <EXIT_NAME>QEVA_SUBSCREEN_1101</EXIT_NAME>
+      <SCR_A_PROG>SAPMQEVA</SCR_A_PROG>
+      <SCR_A_NUM>1101</SCR_A_NUM>
+      <SCR_A_SSCR>BADI_SUBSCR_1101</SCR_A_SSCR>
+      <SCR_P_PROG>ZQINSP_EWM</SCR_P_PROG>
+      <SCR_P_NUM>0010</SCR_P_NUM>
+      <IMP_NAME>ZQEVA_SUBSRC_1101_17</IMP_NAME>
+      <SPRSL>E</SPRSL>
+      <SCR_TEXT>BAdI-Subscreen</SCR_TEXT>
+     </item>
+    </SCREENS>
+    <FILTERS>
+     <item>
+      <FLT_VAL>17</FLT_VAL>
+     </item>
+    </FILTERS>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCX_VI02_GENERAL_EXCEPTION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>EWM Warehouse BioLOG Exception Class</DESCRIPT>
+    <CATEGORY>40</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>K</RSTAT>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EXCEPTION_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get the raised exception message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SY_MSG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get message from exception into SY structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_T100KEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>T100 key with mapping of parameters to attribute names</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_M_MSGTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_M_MSGV1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_M_MSGV2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_M_MSGV3</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_M_MSGV4</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_SY_MSG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise exception with message from SY structure</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <SCONAME>IV_MSGID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <SCONAME>IV_MSGNO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <SCONAME>IV_MSGTY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <SCONAME>ZCX_VI02_GENERAL_EXCEPTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM Warehouse BioLOG Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_SYSTEM_EXCEPTION</CMPNAME>
+     <SCONAME>ZCX_VI02_GENERAL_EXCEPTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM Warehouse BioLOG Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_SY_MSG</CMPNAME>
+     <SCONAME>IX_PREV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Abstract Superclass for All Global Exceptions</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_SY_MSG</CMPNAME>
+     <SCONAME>ZCX_VI02_GENERAL_EXCEPTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM Warehouse BioLOG Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

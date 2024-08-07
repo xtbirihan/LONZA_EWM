@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>TU Type Determination</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_VI02_MFS_TUTYPE_DET</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_VI02_MFS_TUTYPE_DET</FUNCNAME>
+     <SHORT_TEXT>TU Type Determination</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_SWL_MFSCP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SL0/T_MFSCP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_TELEGRAM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/S_MFS_TELETOTAL</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/HUIDENT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IO_LOG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>REF TO /SL0/CL_LOG_MFS</TYP>
+       <REF_CLASS>X</REF_CLASS>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_TUTYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SL0/DE_TUTYPE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_SWL_MFSCP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Swisslog Communication Point Customizing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_TELEGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mapping Structure for Standard Action</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Unit Identification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IO_LOG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>New MFS Logger class</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_TUTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SIS Transport Unit Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

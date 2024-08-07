@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z_VI02_RF</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>300</MSGNR>
+     <TEXT>--------- Messages for Dummy Transport HU Creation ----------------------</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>301</MSGNR>
+     <TEXT>No destination parameter defined for Logical Transaction &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>302</MSGNR>
+     <TEXT>No destination bin is determined for Parameter &amp;1 (context &amp;2/profile &amp;3)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>303</MSGNR>
+     <TEXT>Pallet was not placed on Conveyor Infeed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>304</MSGNR>
+     <TEXT>Packaging Material [&amp;1] not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>305</MSGNR>
+     <TEXT>&amp;1&amp;2&amp;3&amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>306</MSGNR>
+     <TEXT>Another HU &amp;1 is on the infeed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>307</MSGNR>
+     <TEXT>HU &amp;1 is a subHU</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>308</MSGNR>
+     <TEXT>HU &amp;1 has content</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>309</MSGNR>
+     <TEXT>No Proc.Type is determined for Parameter &amp;1 (context &amp;2/profile &amp;3)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>310</MSGNR>
+     <TEXT>Proc Type &amp;1 is not allowed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>311</MSGNR>
+     <TEXT>Verify HU</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_RF</ARBGB>
+     <MSGNR>312</MSGNR>
+     <TEXT>Open WT &amp;2 (&amp;3-&gt;&amp;4) for HU &amp;1</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

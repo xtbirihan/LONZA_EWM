@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCX_VI02_RF</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>EWM-RF: Exception Class</DESCRIPT>
+    <CATEGORY>40</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SY_MSG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get message from exception into SY structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_FROM_EWM_GEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise exception with message from EWM general exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_FROM_SY_MSG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise exception with message from SY structure</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_FROM_EWM_GEN</CMPNAME>
+     <SCONAME>IX_EWM_GEN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error handling class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_FROM_EWM_GEN</CMPNAME>
+     <SCONAME>ZCX_VI02_RF</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM-RF: Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_FROM_SY_MSG</CMPNAME>
+     <SCONAME>IX_PREV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Abstract Superclass for All Global Exceptions</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_FROM_SY_MSG</CMPNAME>
+     <SCONAME>ZCX_VI02_RF</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM-RF: Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

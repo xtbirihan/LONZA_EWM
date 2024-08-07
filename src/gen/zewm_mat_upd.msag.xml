@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZEWM_MAT_UPD</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_MAT_UPD</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Material read fail.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_MAT_UPD</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Entitled not found!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_MAT_UPD</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Update failed due to missing key value for product master determination.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_MAT_UPD</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Update fail due to missing default values for warehouse product.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

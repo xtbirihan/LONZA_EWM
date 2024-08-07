@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/Device","z_vi02_sampling/model/models"],function(e,i,t){"use strict";return e.extend("z_vi02_sampling.Component",{metadata:{manifest:"json"},init:function(){e.prototype.init.apply(this,arguments);this.getR+
+outer().initialize();this.setModel(t.createDeviceModel(),"device")}})});                                                                                                                                                                                       

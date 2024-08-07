@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z_VI02_GENERAL</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>BioLOG</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>&amp;1 entries found in DB table &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>&amp;1 entries found in DB table &amp;2 for query &quot;&amp;3&amp;4&quot;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Please only provide packaging material or HU number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>Please provide packaging material or HU number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>Empty key values!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>&amp;1 storage bins will be updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>Could not update &amp;1 storage bins</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>&amp;1 storage bins updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>104</MSGNR>
+     <TEXT>Compartment &amp;1 is still in use</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>105</MSGNR>
+     <TEXT>&amp;1 Compartment bins will be updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>106</MSGNR>
+     <TEXT>Could not update &amp;1 Compartment</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02_GENERAL</ARBGB>
+     <MSGNR>107</MSGNR>
+     <TEXT>&amp;1 Compartment updated</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

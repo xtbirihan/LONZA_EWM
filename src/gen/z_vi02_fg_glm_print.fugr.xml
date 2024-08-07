@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group GLM Printing</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_VI02_FG_GLM_PRINT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_VI02_GLM_PRINT</FUNCNAME>
+     <SHORT_TEXT>Generic GLM Printing Function Module</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/DE_HUIDENT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TTYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>PPFDTT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>PPFDCNTXT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PROCTY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/DE_PROCTY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUIDENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Unit Identification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PPF: Name of Action Definition</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PPF: Name of Action Profile</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PROCTY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Process Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

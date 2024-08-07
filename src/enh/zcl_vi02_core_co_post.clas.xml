@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_VI02_CORE_CO_POST</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for BAdI Implementation ZBI_VI02_CORE_CO_POST</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>WTCONF_CTRL_GET</CMPNAME>
+     <SCONAME>ET_WTCONF</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Control Table for automated Postings</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WTCONF_CTRL_GET</CMPNAME>
+     <SCONAME>IS_ORDIM_C</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table: Warehouse Tasks Confirmed</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WTCONF_CTRL_GET</CMPNAME>
+     <SCONAME>IV_CALLER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Range for Creation and Confirmation BADI { CR | CO}</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

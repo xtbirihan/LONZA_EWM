@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>EWM BioLOG: RF Packing Process</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZ_VI02_RF_PUTAWAY</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_VI02_RF_PT_HU_DEST_PBO</FUNCNAME>
+     <SHORT_TEXT>PBO Putaway HU Destination Storage Bin</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CS_PTWY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/S_RF_PTWY</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CS_ADMIN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/S_RF_ADMIN</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CT_PTWY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_RF_PTWY</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CT_LGPLA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_LGPLA</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>WME_VERIF</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/S_WME_VERIF</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CT_SERNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_RF_SERNR</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>TT_NESTED_HU</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_RF_NESTED_HU</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CS_PTWY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dynpro-Struktur für Entladeprozess</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CS_ADMIN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Materialnummer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CT_PTWY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabellentyp für RF-Dynpros beim Einlagerprozess</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CT_LGPLA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabelle von Lagerplätzen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WME_VERIF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Schlüsselfelder zur Findung des Verifikationsprofils in WME</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CT_SERNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for RF Serial Number Creation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TT_NESTED_HU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RF Nested HU</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

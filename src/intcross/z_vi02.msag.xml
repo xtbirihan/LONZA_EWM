@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z_VI02</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>BioLog: Message Class</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Cannot pack from &amp;1 into &amp;2 ( &amp;1 is not empty, and &amp;2 is a sample HU)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Cannot pack from &amp;1 into &amp;2 ( it is already used by source &amp;3)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_VI02</ARBGB>
+     <MSGNR>004</MSGNR>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
